@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sell products</title>
+</head>
+<body>
+
+<h2>Upload Details.</h2>
+
+    <form name = 'sell' action = 'sell' method = "post" enctype = "multipart/form-data">
+    {% csrf_token %}
+
+
+    <input type = 'text' name = 'pname' placeholder="product name" required> <br> <br>
+        <input type = 'number' name = 'price' placeholder=" product price." required> <br> <br>
+        <textarea rows="4" cols="50" name="des" form="sell" ></textarea> <br> <br>
+
+<p> choose a file to upload photo of a product</p>
+    <input type = 'file' name = 'prod'>
+    <button type = 'submit'>sell</button>
+
+</form>
+
+</body>
+</html>
